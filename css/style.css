@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.navegador {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 40px;
+}
+.tituloFot {
+  display: flex;
+  padding: 40px;
+}
+
+.politicas {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  
+}
+ul {
+  list-style: none;
+}
+.nav1 {
+    display: flex;
+
+}
+.nav2 {
+    display: flex;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
