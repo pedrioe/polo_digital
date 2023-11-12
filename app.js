@@ -205,17 +205,19 @@ app.post("/clientes ", function (request, response) {
   );
 });
 
-app.get("/cliente/id", function (request, response) {
-  let datosClientes = request.params.clientes;
+app.get("/clientes/id", function (request, response) {
+  let datosClientes = request.params.id;
   connection.query(
     `select * from clientes where id = ${id}`,
     function (error, result, fields) {
+      console.log(error);
       handleSQLError(response, error, result, function (result) {
         if (result == 0) {
-          response.send({});
+          response.send([]);
         } else {
-          response.send(result(0));
+          response.send(result);
           console.log("Obtienen los datos del cliente con el id en :id");
+          
         }
       });
     }
